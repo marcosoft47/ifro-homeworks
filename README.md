@@ -9,6 +9,3 @@ All of the devops files (that I will add eventually, I have to double check some
 Some of my other repositories are stuff I made in high school. They are better than most of the code here. They are not included here.
 
 Since this is pretty much everything relevant I made in high school (coding related), I want to thank my friends that supported me emotionally through high school, especially during the pandemic. It was a lot less painful experience thanks to you!
-
-"Nenhum dia é ruim com você ao meu lado."
-- MEB
