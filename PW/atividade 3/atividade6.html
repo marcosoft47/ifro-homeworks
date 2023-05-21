@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade 6</title>
+    </head>
+    <body>
+        <form id="cadastro">
+            <label>Nome de usuário: <input type="text" name="username"></label>
+            <label>Senha: <input name="password" type="password"></label>
+            <label>Confirmar senha: <input name="passwordCheck" type="password"></label>
+
+            <input type="button" onclick="validar()">
+        </form>
+    </body>
+    <script>
+        function validar(){
+        var cadastro = document.forms['cadastro'];
+        var senha = cadastro.password.value;
+        var senhaCheck = cadastro.passwordCheck.value;
+        var nome = cadastro.username.value;
+        if (nome !== ""){
+            if (senha !== "" && senhaCheck !== ""){
+                if (senha === senhaCheck){
+                    alert('Tudo certo!');
+                } else{
+                    alert('Senhas são diferentes!');
+                }
+            } else {
+                alert('Senhas vazias!');
+            }
+        } else{
+            alert('Nome vazio!');
+        }
+        }
+    </script>
+</html>

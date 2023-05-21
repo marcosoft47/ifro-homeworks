@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Markware :: Cadastro</title>
+        </head>
+        <body bgcolor="wheat">
+            <div id="cabecalho">
+                <a href="homepage.html"><img src="imagens/Rasmus.png" width="150px" height="150px" id="logo"></a>
+                <h1>Markware</h1>
+                <h2>Soluções em informática</h2>
+            </div>
+
+            <div id="contato">
+                <a href="faleconosco.html">Fale conosco</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+
+
+            <p>Informe os dados para o seu cadastro no melhor site do mundo (o que é um fato)</p>
+            <form action="dados_cadastro.php">
+                <p>
+                    <dl>
+                        <dd>
+                            <p>Endereço de email: <input type="text" size="50" maxlength="100" name="email"></p>
+                            <p>Nome: <input type="text" size="50" maxlength="100" name="nome"></p>
+                            <p>Sexo: 
+                                <select name="sexo" size="1">
+                                    <option value="fem">Feminino</option>
+                                    <option value="mas">Masculino</option>
+                                </select>
+                            </p>
+                            <p>Curso: 
+                                <select name="curso" size="1">
+                                    <option value="inf">Curso Técnico em Informática</option>
+                                    <option value="qui">Curso Técnico em Química</option>
+                                    <option value="flo">Curso Técnico em Florestas</option>
+                                </select>
+                            </p>
+                            <p>Endereço: <input type="text" size="50" maxlength="50" name="endereco"></p>
+                            <p>Complemento: <input type="text" size="50" maxlength="50" name="complemento"></p>
+                            <p>CEP: <input type="text" size="20" maxlength="20" name="cep"></p>
+                            <p>Município: <input type="text" size="50" maxlength="100" name="municipio"> Estado: 
+                                <select name="estado" size="1">
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                            </p>
+                            <br />
+                            <input type="submit" value="Cadastrar">
+                        </dd>
+                    </dl>
+                </p>
+            </form>
+
+            
+        </body>
+    </html>

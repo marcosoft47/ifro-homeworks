@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade 8</title>
+    </head>
+    <body onload="bomdia()">
+        <h1 onmouseover="happy(this)" onmouseout="this.innerHTML=':('">:</h1>
+        <input placeholder="sus" onkeypress="alert('ඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞ')">
+        <button onclick="impendingDoom()">amogus</button>
+        <p id='sus'>sus</p>
+    </body>
+    <script>
+        var doom = false;
+        function impendingDoom(){
+            document.body.style.backgroundColor = 'rgb(255, 0, 0)';
+            var red = document.getElementById('sus');
+            red.style.opacity = 1;
+            doom = true;
+        }
+        function happy(obj){
+            if(doom == false){
+                obj.innerHTML=':)';
+            }
+        }
+        function bomdia(){
+            alert('BOM DIA!!!!!!!!!!!!!!!!!1!!')
+        }
+    </script>
+    <style>
+        #sus{
+            opacity: 0;
+        }
+    </style>
+</html>

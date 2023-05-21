@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade 7</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <label>Email: <input id="email" type="email"></label>
+        <label>CPF <input id="cpf" type="text"></label>
+
+        <button onclick="validacao()">checar</button>
+    </body>
+    <script>
+        function validacao(){
+            var valEmail = validacaoEmail();
+            var valCpf = validacaoCPF();
+            if (valCpf && valEmail){
+                alert('Cadastro Feito com sucesso!');
+            }
+        }
+        function validacaoEmail() {
+            var email = document.getElementById('email');
+            var usuario = email.value.substring(0, email.value.indexOf("@"));
+            var dominio = email.value.substring(email.value.indexOf("@")+ 1, email.value.length);
+            if ((usuario.length >=1) &&
+                (dominio.length >=3) &&
+                (usuario.search("@")==-1) &&
+                (dominio.search("@")==-1) &&
+                (usuario.search(" ")==-1) &&
+                (dominio.search(" ")==-1) &&
+                (dominio.search(".")!=-1) &&
+                (dominio.indexOf(".") >=1)&&
+                (dominio.lastIndexOf(".") < dominio.length - 1)) {
+            return true;
+            } else{
+                alert('Email inválido!');
+            }
+        }
+        function validacaoCPF(){
+            var cpf = document.getElementById('cpf');
+            cpf = cpf.value;
+            cpf = cpf.replace(/[.-]/g, '');
+            if (cpf.length == 11){
+                return true;
+            } else{
+                alert('CPF Inválido!');
+            }
+        }
+    </script>
+</html>

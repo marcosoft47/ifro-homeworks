@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Markware :: Fale Conosco</title>
+        </head>
+        <body bgcolor="wheat">
+            <div id="cabecalho">
+                <a href="homepage.html"><img src="imagens/Rasmus.png" width="150px" height="150px" id="logo"></a>
+                <h1>Markware</h1>
+                <h2>Soluções em informática</h2>
+            </div>
+            <div id="contato">
+                <a href="faleconosco.html">Fale conosco</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+
+            <div>
+                <p>Informe seus dados, e então, nos envie uma mensagem :)</p>
+                <form action="envio_mensagem.php">
+                    <p>Seu nome: <input type="text" name="nome" size="40" maxlength="100" placeholder="Informe o seu nome aqui"></p>
+                    <p>Seu telefone: <input type="text" name="fone" size="40" maxlength="100" placeholder="Informe o seu numero de telefone aqui"></p>
+                    <p>Seu email: <input type="text" name="email" size="40" maxlength="100" placeholder="Informe o seu email aqui"></p>
+                    <p>Deseja receber nossas novidades?
+                        <input type="radio" name="novidades" value="sim"> sim
+                        <input type="radio" name="novidades" value="sim"> não
+                    </p>
+                    <p>Assunto: <input type="text" name="assunto" size="40" maxlength="100" placeholder="Informe o seu asunto aqui"></p>
+                    <dl>
+                        <p>Mensagem:</p>
+                        <dd>
+                        <textarea name="assunto" rows="5" cols="70" placeholder="Diga sua mensagem"></textarea>
+                        <dd>
+                    </dl>
+                    <p>
+                        <input type="submit" value="Enviar mensagem">
+                    </p>
+                </form>
+            </div>
+        </body>
+    </html>

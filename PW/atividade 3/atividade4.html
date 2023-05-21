@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade 4</title>
+    </head>
+    <body>
+        <form name="cadastro" >
+            <p><input type="text" name="texto1"></p>
+            <p><input type="text" name="texto2"></p>
+            <p><input type="text" name="texto3"></p>
+            <p><input type="text" name="texto4"></p>
+            <p><input type="text" name="texto5"></p>
+            <p><input type="text" name="texto6"></p>
+            <p><input type="text" name="texto7"></p>
+            <p><input type="text" name="texto8"></p>
+            <p><input type="text" name="texto9"></p>
+            <p><input type="text" name="texto10"></p>            
+            <input type="button" onclick="validar()" value="enviar">
+        </form>
+    </body>
+    <script>
+        function validar(){
+            var nomes = document.forms['cadastro'];
+            var letras = [nomes.texto1.value, nomes.texto2.value, nomes.texto3.value, nomes.texto4.value, nomes.texto5.value, nomes.texto6.value, nomes.texto7.value, nomes.texto8.value, nomes.texto9.value, nomes.texto10.value];
+            for(i=0; i<10; i++){
+                if(letras[i].length == 4){
+                console.log(letras[i]);
+                }
+            }
+        }
+    </script>
+</html>

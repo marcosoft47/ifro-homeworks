@@ -1,0 +1,23 @@
+Nome: Marco Antonio Reche Rigon 	Turma: 3B Informática
+
+Link Figma: https://www.figma.com/file/WsYhoWgZsG3NAhJAHTZW7K/MarkWare?node-id=28%3A3
+
+Logo:
+Preferi fazer uma logo com a coincidência de que a letra W é um M de cabeça para baixo.
+A logo usa cores escuras para dar a sensação de ser uma empresa sofisticada, em que leva tudo
+a sério. O contorno é apenas para ser possível enxergar em planos mais escuros, coisa que seria
+difícil sem o contorno.
+
+Paleta de cores:
+Optei de escolher preto e roxo escuro para demonstrar a espiritualidade. A Markware Productions
+visa fazer filmes mais inspiradores. A inspiração pode ou não ser de algo feliz, então optei de não
+usar azul. Os filmes usados de exemplo são projetos que tive a uns meses atrás que nunca levei para
+frente. São vídeos/filmes em que mostram a mensagem que cada jogo passa, como o fanatismo religioso
+e pensar fora da caixa. Esses filmes são para mexer com a sua alma, mexer no seu espirito.
+
+E porque eu gosto de preto e roxo :V
+
+Figma:
+Só uma coisinha: Quando o usuario passar o mouse em cima do desenho de cada filme (Na sessão de
+adaptação), uma animação vai tocar na imagem que montei para elas (Tocar som talvez?). Clicar na
+imagem vai levar o usuario para o Youtube, em que tais vídeos estão hospedados

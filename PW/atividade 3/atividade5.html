@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade 5</title>
+    </head>
+    <body>
+        <form name="cadastro" >
+            <p><label>Primeiro nome: <input type="text" name="primeiroNome"></label></p>
+            <p><label>Segundo nome: <input type="text" name="segundoNome"></label></p>
+            <p><label>Data de aniversário: <input type="date" name="aniversario"></label></p>
+            <p><label>Sexo: <select name="sexo" size="1">
+                <option value="masc">Masculino</option>
+                <option value="femi">Feminino</option>
+            </select></label></p>
+            <p>Endereço:</p>
+            <p><label>Rua: <input type="text" name="rua"></label></p>
+            <p><label>Número: <input type="text" name="numero"></label></p>
+            <p><label>Bairro: <input type="text" name="bairro"></label></p>
+            <p><label>Cidade: <input type="text" name="cidade"></label></p>
+            <p><label>Estado: <input type="text" name="estado"></label></p>
+            <p><label>CEP: <input type="text" name="cep"></label></p>
+            
+            
+            <input type="button" onclick="validar()" value="enviar">
+        </form> 
+    </body>
+    <script>
+        function validar(){
+            var dados = document.forms['cadastro'];
+            var letras = [dados.primeiroNome.value, dados.segundoNome.value, dados.aniversario.value, dados.sexo.value, dados.rua.value, dados.numero.value, dados.bairro.value, dados.cidade.value, dados.estado.value, dados.cep.value];
+            var preenchido = true;
+            for(i=0; i<letras.length; i++){
+                console.log(letras[i]);
+                if(letras[i] == ""){
+                alert("Um campo ou mais estão vazios!" + i);
+                preenchido = false;
+                break;
+                }
+            }
+            if(preenchido === true){
+                alert("Tudo certo :)");
+            }
+        }
+    </script>
+</html>
